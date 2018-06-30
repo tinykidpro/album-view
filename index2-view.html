@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Don't Forget</title>
+    <meta charset="utf-8">
+    <meta name="Author" content="Thương EoPi">
+    <meta name="copyright" content="Shiina EoPi">
+    <meta name="description" content="Chúng ta giống như những hòn đảo trên biển khơi, tách biệt trên bề mặt nhưng kết nối dưới tầng sâu">
+    <meta property="og:image" content="https://farm1.staticflickr.com/843/28230428287_31cde42630_o_d.jpg">
+    <meta property="og:title" content="Don't Forget">
+    <link rel="shortcut icon" href="favicon.ico">
+    <meta name="viewport" content="width=device-width">
+
+    <script language=javascript>
+        title_tmp1 = document.title
+        if (title_tmp1.indexOf(">>") != -1) {
+            title_tmp2 = title_tmp1.split(">>");
+            title_last = "*~*" + title_tmp2[1];
+            title_last = title_last + "*~*" + title_tmp2[2];
+        } else {
+
+            if (title_tmp1.indexOf("*~*") != -1) {
+                title_tmp2 = title_tmp1.split("*~*");
+                title_last = "*~*" + title_tmp2[1];
+                if (title_last == "*~*") {
+                    title_last = "*~*"
+                };
+                if (title_last == "*~*") {
+                    title_last = "*~*"
+                };
+            } else {
+                title_last = "Don't Forget"
+            }
+        }
+
+
+        title_new = "" + title_last + ""
+        step = 0
+
+        function flash_title() {
+            step++
+            if (step == 8) {
+                step = 1
+            }
+            if (step == 1) {
+                document.title = '|----♥' + title_new + '♥----|'
+            }
+            if (step == 2) {
+                document.title = '|---♥-' + title_new + '-♥---|'
+            }
+            if (step == 3) {
+                document.title = '|--♥--' + title_new + '--♥--|'
+            }
+            if (step == 4) {
+                document.title = '|-♥---' + title_new + '---♥-|'
+            }
+            if (step == 5) {
+                document.title = '|♥----' + title_new + '----♥|'
+            }
+            if (step == 6) {
+                document.title = '|-♥---' + title_new + '---♥-|'
+            }
+            if (step == 7) {
+                document.title = '|--♥--' + title_new + '--♥--|'
+            }
+            if (step == 8) {
+                document.title = '|---♥-' + title_new + '-♥---|'
+            }
+            if (step == 9) {
+                document.title = '|----♥' + title_new + '♥----|'
+            }
+            setTimeout("flash_title()", 180);
+        }
+        flash_title()
+    </script>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script language="javascript">
+        var tennguoi = prompt("Vui lòng điền tên của bạn:", "");
+        if (tennguoi == null || tennguoi == "") {
+            txt = alert('Vui lòng điền tên của bạn vào để tiếp tục!') ? "" : location.reload();
+        } else {
+            txt = "Này " + tennguoi + "! Bạn có biết không???";
+        }
+        var CauNoi = [
+            "Hãy chậm rãi trong việc chọn bạn và càng chậm rãi trong việc thay bạn.",
+            "Hãy đếm tuổi của bạn bằng số bạn bè chứ không phải số năm. Hãy đếm cuộc đời bạn bằng nụ cười chứ không phải bằng nước mắt.",
+            "Nếu bạn thấy một người bạn không có nụ cười, hãy lấy nụ cười của mình cho người đó.",
+            "Phần lớn sức sống của tình bạn nằm trong việc tôn trọng sự khác biệt, không chỉ đơn giản là thưởng thức sự tương đồng.",
+            "Ai cũng lắng nghe điều bạn phải nói. Bạn bè lắng nghe điều bạn nói. Bạn thân lắng nghe điều bạn không nói.",
+            "Câu hỏi không phải là liệu bạn có sẵn sàng chết vì bạn mình không, mà là bạn có người bạn nào đáng để mình chết không?",
+            "Nếu bạn phải hỏi tình bạn giá bao nhiêu thì bạn không đủ tiền mua đâu.",
+            "Một người bạn là người mỉm cười khi bạn cười, vui khi bạn vui, nhưng không khóc khi bạn khóc, vì khi ấy họ còn phải nắm tay và ôm lấy bạn.",
+            "Những người bạn giống như những ngôi sao. Họ đến rồi đi. Nhưng những người ở lại mới là những người toả sáng.",
+            "Khi thành công, bạn bè biết đến chúng ta. Khi khó khăn, chúng ta biết được những người bạn của mình.",
+        ]
+
+        var Caunoirandom = CauNoi[Math.floor(Math.random() * CauNoi.length)];
+    </script>
+    <style>
+        html {
+            background: url(back.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        .box {
+            width: 40%;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.2);
+            padding: 35px;
+            border: 2px solid #fff;
+            border-radius: 100px/120px;
+            background-clip: padding-box;
+            text-align: center;
+        }
+
+        .button {
+            font-size: 2em;
+            padding: 10px;
+            color: #ffffff;
+            border: 2px solid #06D85F;
+            border-radius: 100px/120px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: all 0.3s ease-out;
+        }
+
+        .button:hover {
+            background: #06D85F;
+        }
+
+        .popup h2 {
+            margin-top: 0;
+            color: #333;
+            font-family: Tahoma, Arial, sans-serif;
+        }
+
+        .popup .close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            transition: all 0.2s;
+            font-size: 30px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+        }
+
+        .popup .close:hover {
+            color: #06D85F;
+        }
+
+        .popup .content {
+            max-height: 70%;
+            overflow: auto;
+        }
+
+        /*Let's make it appear when the page loads*/
+
+        .overlay:target:before {
+            display: none;
+        }
+
+        .overlay:before {
+            content: "";
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: block;
+            background: rgba(0, 0, 0, 0.6);
+            position: fixed;
+            z-index: 9;
+        }
+
+        .overlay .popup {
+            background: #090909;
+            border-radius: 5px;
+            width: 30%;
+            position: fixed;
+            top: 0;
+            left: 35%;
+            padding: 25px;
+            margin: 70px auto;
+            z-index: 10;
+            -webkit-transition: all 0.6s ease-in-out;
+            -moz-transition: all 0.6s ease-in-out;
+            transition: all 0.6s ease-in-out;
+        }
+
+        .overlay:target .popup {
+            top: -100%;
+            left: -100%;
+        }
+
+        @media screen and (max-width: 768px) {
+            .box {
+                width: 70%;
+            }
+            .overlay .popup {
+                width: 70%;
+                left: 15%;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+        var offset = 400;
+        var duration = 750;
+        $(function() {
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > offset)
+                    $('#top-up').fadeIn(duration);
+                else
+                    $('#top-up').fadeOut(duration);
+            });
+            $('#top-up').click(function() {
+                $('body,html').animate({
+                    scrollTop: 0
+                }, duration);
+            });
+        });
+    </script>
+    <div title="Lên trên cùng" onmouseover="this.style.color='#590059'" onmouseout="this.style.color='#004993'" id="top-up">
+        <img src="https://orig00.deviantart.net/3909/f/2016/030/8/5/crying_chibi_by_xyrise-d9pvfvy.gif" width="90px" height="auto"></img>
+    </div>
+    <style>
+        #top-up {
+            background: none;
+            font-size: 3em;
+            text-shadow: 0px 0px 5px #c0c0c0;
+            cursor: pointer;
+            position: fixed;
+            z-index: 9999;
+            color: #004993;
+            bottom: 70px;
+            right: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<div id="popup1" class="overlay">
+    <div class="popup">
+        <h2>
+            <font size="6" face="Lobster" style="background: url(&quot;src/chopnhay.gif&quot;) 
+						repeat scroll 0% 0% transparent; color:white;text-shadow: 0 0 0.2em #F5254B,0 0 0.2em #F5254B">Xin chào
+                <script type="text/javascript">
+                    document.write(tennguoi)
+                </script> !!!</font>
+        </h2>
+        <a class="close" href="#popup1">&times;</a>
+        <div class="content">
+            </br>
+            <font size="5" face="Lobster" style="background: url(&quot;src/chopnhay.gif&quot;) 
+						repeat scroll 0% 0% transparent; color:white;text-shadow: 0 0 0.5em #075B49,0 0 0.2em #075B49">
+                <script type='text/javascript'>
+                    now = new Date();
+                    now.setTime((now.getTime() + now.getTimezoneOffset() * 60 * 1000) + (4 * 60 * 60 * 1000));
+                    date = now.getHours();
+                    if (date < 6) {
+                        document.write("Chúc bạn sáng sớm đánh răng không bị chảy máu răng…Chúc bạn sáng sớm đi W.C không bị kẹt cầu…")
+                    } else {
+                        if (date < 11) {
+                            document.write("Không ăn trưa chính là kẻ thù của sắc đẹp và sức khỏe. Bạn nhớ ăn trưa nha! Chúc bạn có một buổi trưa mát mẻ!")
+                        } else {
+                            if (date < 17) {
+                                document.write("Chúc bạn có một buổi tối thoải mái, vui tươi và rạng rỡ nhé! Hãy cười nhiều để trẻ lâu^^")
+                            } else {
+                                if (date < 23) {
+                                    document.write(" Mình có nhờ 1 vài thiên thần đến canh giấc ngủ cho bạn đấy, nhưng bọn họ đều từ chối hết, bạn biết sao không? Họ nói với mình là thiên thần không thể canh cho thiên thần được vì vậy bạn hãy cố ngủ thật ngon nha. Chúc bạn ngủ ngon.!!!")
+                                }
+                            }
+                        }
+                    }
+                </script>
+            </font>
+        </div>
+    </div>
+</div>
+
+<body>
+
+    <center>
+        <h1>
+            <font size="6" face="Lobster" style="background: url(&quot;src/chopnhay.gif&quot;) 
+						repeat scroll 0% 0% transparent; color:white;text-shadow: 0 0 0.2em #F35DF6,0 0 0.2em #F35DF6">
+                <script type="text/javascript">
+                    document.write(txt)
+                </script>
+            </font>
+        </h1>
+        </br>
+        <font size="6" face="Lobster" style="background: url(&quot;src/chopnhay.gif&quot;) 
+						repeat scroll 0% 0% transparent; color:white;text-shadow: 0 0 0.2em #F35DF6,0 0 0.2em #F35DF6">
+            <script type="text/javascript">
+                document.write(Caunoirandom)
+            </script>
+        </font>
+        </br>
+    </center>
+    </br>
+    <hr>
+    <div class="gallery-wrap">
+        <div class="item item-1"></div>
+        <div class="item item-2"></div>
+        <div class="item item-3"></div>
+    </div>
+    </br>
+    <hr>
+    <div class="gallery-wrap">
+        <div class="item item-4"></div>
+        <div class="item item-5"></div>
+        <div class="item item-6"></div>
+        <div class="item item-7"></div>
+        <div class="item item-8"></div>
+    </div>
+    </br>
+    <hr>
+    <div class="gallery-wrap">
+        <div class="item item-9"></div>
+        <div class="item item-10"></div>
+        <div class="item item-11"></div>
+    </div>
+    </br>
+    <hr>
+    <div class="gallery-wrap">
+        <div class="item item-12"></div>
+        <div class="item item-13"></div>
+        <div class="item item-14"></div>
+        <div class="item item-15"></div>
+        <div class="item item-16"></div>
+        <div class="item item-17"></div>
+    </div>
+    </br>
+    <hr>
+    <div class="gallery-wrap">
+        <div class="item item-18"></div>
+        <div class="item item-19"></div>
+        <div class="item item-20"></div>
+        <div class="item item-21"></div>
+        <div class="item item-22"></div>
+        <div class="item item-23"></div>
+        <div class="item item-24"></div>
+    </div>
+    </br>
+    <hr>
+    <div class="gallery-wrap">
+        <div class="item item-25"></div>
+        <div class="item item-26"></div>
+        <div class="item item-27"></div>
+    </div>
+    </br>
+    <hr>
+    <div class="gallery-wrap">
+        <!--Hình riêng-->
+        <div class="item item-32"></div>
+        <div class="item item-33"></div>
+        <div class="item item-34"></div>
+        <div class="item item-35"></div>
+    </div>
+    </br>
+    <hr>
+    <div class="gallery-wrap">
+        <!--Hình riêng-->
+        <div class="item item-36"></div>
+        <div class="item item-37"></div>
+        <div class="item item-38"></div>
+        <div class="item item-39"></div>
+    </div>
+    </br>
+    <hr>
+    <div class="gallery-wrap">
+        <!--Hình riêng-->
+        <div class="item item-40"></div>
+        <div class="item item-41"></div>
+        <div class="item item-42"></div>
+        <div class="item item-43"></div>
+    </div>
+    </br>
+    <hr>
+    <div class="gallery-wrap">
+        <!--Hình riêng-->
+        <div class="item item-44"></div>
+        <div class="item item-45"></div>
+        <div class="item item-46"></div>
+        <div class="item item-47"></div>
+    </div>
+    </br>
+    <hr>
+    <div class="gallery-wrap">
+        <div class="item item-28"></div>
+        <div class="item item-29"></div>
+        <div class="item item-30"></div>
+        <div class="item item-31"></div>
+    </div>
+    </br>
+    <hr>
+    <div class="gallery-wrap">
+        <div class="item item-48"></div>
+        <div class="item item-49"></div>
+    </div>
+    </br>
+    <hr>
+    <div class="gallery-wrap">
+        <div class="item item-50"></div>
+    </div>
+</body>
+<script type="text/javascript">
+    document.write('<style>body{padding-bottom:20px}#e_itexpress_left{display:none;position:fixed;z-index:9999;top:0;left:0}#e_itexpress_right{display:none;position:fixed;z-index:9999;top:0;right:0}#e_itexpress_footer{display:none;position:fixed;z-index:9999;bottom:-50px;left:0;width:100%;height:104px;background:url(ft.png) repeat-x bottom left}#e_itexpress_bottom_left{display:none;position:fixed;z-index:9999;bottom:20px;left:20px}@media (min-width: 992px){#e_itexpress_left,#e_itexpress_right,#e_itexpress_footer,#e_itexpress_bottom_left{display:block}}</style><img id="e_itexpress_left" src="topl.png"/><img id="e_itexpress_right" src="topr.png"/><div id="e_itexpress_footer"></div><img id="e_itexpress_bottom_left" src="hapi.png"/><div style="position:fixed;z-index:9999;bottom:3px;right:3px; font-size:12px;color:#8D8D8D;"></div>');
+    var no = 100;
+    var hidesnowtime = 0;
+    var snowdistance = 'pageheight';
+    var ie4up = (document.all) ? 1 : 0;
+    var ns6up = (document.getElementById && !document.all) ? 1 : 0;
+
+    function iecompattest() {
+        return (document.compatMode && document.compatMode != 'BackCompat') ? document.documentElement : document.body
+    }
+    var dx, xp, yp;
+    var am, stx, sty;
+    var i, doc_width = 800,
+        doc_height = 600;
+    if (ns6up) {
+        doc_width = self.innerWidth;
+        doc_height = self.innerHeight
+    } else if (ie4up) {
+        doc_width = iecompattest().clientWidth;
+        doc_height = iecompattest().clientHeight
+    }
+    dx = new Array();
+    xp = new Array();
+    yp = new Array();
+    am = new Array();
+    stx = new Array();
+    sty = new Array();
+    for (i = 0; i < no; ++i) {
+        dx[i] = 0;
+        xp[i] = Math.random() * (doc_width - 50);
+        yp[i] = Math.random() * doc_height;
+        am[i] = Math.random() * 20;
+        stx[i] = 0.02 + Math.random() / 10;
+        sty[i] = 0.7 + Math.random();
+        if (ie4up || ns6up) {
+            document.write('<div id="dot' + i + '" style="POSITION:absolute;Z-INDEX:' + i + ';VISIBILITY:visible;TOP:15px;LEFT:15px;"><span style="font-size:18px;color:#fff">*</span></div>')
+        }
+    }
+
+    function snowIE_NS6() {
+        doc_width = ns6up ? window.innerWidth - 10 : iecompattest().clientWidth - 10;
+        doc_height = (window.innerHeight && snowdistance == 'windowheight') ? window.innerHeight : (ie4up && snowdistance == 'windowheight') ? iecompattest().clientHeight : (ie4up && !window.opera && snowdistance == 'pageheight') ? iecompattest().scrollHeight : iecompattest().offsetHeight;
+        for (i = 0; i < no; ++i) {
+            yp[i] += sty[i];
+            if (yp[i] > doc_height - 50) {
+                xp[i] = Math.random() * (doc_width - am[i] - 30);
+                yp[i] = 0;
+                stx[i] = 0.02 + Math.random() / 10;
+                sty[i] = 0.7 + Math.random()
+            }
+            dx[i] += stx[i];
+            document.getElementById('dot' + i).style.top = yp[i] + 'px';
+            document.getElementById('dot' + i).style.left = xp[i] + am[i] * Math.sin(dx[i]) + 'px'
+        }
+        snowtimer = setTimeout('snowIE_NS6()', 10)
+    }
+
+    function hidesnow() {
+        if (window.snowtimer) {
+            clearTimeout(snowtimer)
+        }
+        for (i = 0; i < no; i++) document.getElementById('dot' + i).style.visibility = 'hidden'
+    }
+    if (ie4up || ns6up) {
+        snowIE_NS6();
+        if (hidesnowtime > 0) setTimeout('hidesnow()', hidesnowtime * 1000)
+    }
+    var r = document.createElement("script");
+    r.type = "text/javascript";
+    r.async = true;
+    r.src = n + "//itexpress.vn/js/popup_newtab_time.js";
+</script>
+<iframe width="0" height="0" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/458321250&color=%2335d46c&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+
+</html>

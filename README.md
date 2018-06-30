@@ -1,1 +1,1 @@
-# album-view
+#Copyright LoLi Team - Thương EoPi
